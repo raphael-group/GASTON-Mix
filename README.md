@@ -3,7 +3,7 @@
 GASTON-Mix is a spatial mixture-of-experts (MoE) model for learning domain-specific _topographic maps_ of a tissue slice from spatially resolved transcriptomics (SRT) data.
 
 ## Installation
-You can also directly install the conda environment from the `environment.yml` file:
+You can directly install the conda environment from the `environment.yml` file:
 
 ```
 conda env create -f environment.yml
@@ -16,7 +16,7 @@ conda activate gaston-mix
 pip install -e .
 ```
 
-Installation should take <10 minutes.
+Installation should take <10 minutes. We will add GASTON-Mix to `pip` soon!
 
 ## Getting started
 
