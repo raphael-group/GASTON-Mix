@@ -4,8 +4,8 @@ GASTON - Mapping the topography of spatial gene expression with interpretable de
 
 GASTON-Mix is a spatial mixture-of-experts (MoE) model for learning domain-specific _topographic maps_ of a tissue slice from spatially resolved transcriptomics (SRT) data.
 
-.. image:: https://raw.githubusercontent.com/raphael-group/GASTON/main/docs/_static/img/method_figure_v1.png
-    :alt: GASTON model architecture
+.. image:: https://raw.githubusercontent.com/raphael-group/GASTON-Mix/main/docs/_static/img/method_figure_v1.png
+    :alt: GASTON-Mix model architecture
     :width: 400px
     :align: center
 
