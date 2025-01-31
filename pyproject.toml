@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gastonmix"
+version = "0.0.1"
+authors = [
+  { name="Uthsav Chitra", email="uchitra@broadinstitute.edu" },
+  { name="Ben Raphael", email="braphael@cs.princeton.edu" },
+]
+description = "GASTON-Mix: a unified model of spatial gradients and domains using spatial mixture-of-experts"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch",
+    "matplotlib",
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "jupyterlab",
+    "seaborn",
+    "tqdm",
+    "scipy"
+]
+license = {text = "BSD"}
+keywords = ["spatial transcriptomics", "neural field", "MoE", "spatial gradients"]
+
+[project.optional-dependencies]
+docs = [
+    "ipython",
+    "ipywidgets>=8.0.0",
+    "sphinx>=5.3",
+    "sphinx-autodoc-annotation",
+    "sphinx-autodoc-typehints>=1.10.3",
+    "sphinx_rtd_theme",
+    "sphinxcontrib-bibtex>=2.3.0",
+    "sphinxcontrib-spelling>=7.6.2",
+    "nbsphinx>=0.8.1",
+    "myst-nb>=0.17.1",
+    "sphinx_copybutton>=0.5.0",
+]
+
+[project.scripts]
+gaston = "gastonmix.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/raphael-group/GASTON-Mix"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gastonmix*"]
