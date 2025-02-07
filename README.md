@@ -40,14 +40,19 @@ We note that GASTON-Mix sometimes uses clusters from CellCharter to initialize i
 
 ## Citations
 
-The GASTON-Mix pre-print is available at [add link] If you use GASTON-Mix for your work, please cite our paper.
+The GASTON-Mix pre-print is available on [biorXiv](https://www.biorxiv.org/content/10.1101/2025.01.31.635955v1). If you use GASTON-Mix for your work, please cite our paper.
 
 ```
-
-@article{Chitra2025,
-	...
+@article {Chitra2025,
+	author = {Chitra, Uthsav and Dan, Shu and Krienen, Fenna and Raphael, Benjamin J.},
+	title = {GASTON-Mix: a unified model of spatial gradients and domains using spatial mixture-of-experts},
+	elocation-id = {2025.01.31.635955},
+	year = {2025},
+	doi = {10.1101/2025.01.31.635955},
+	publisher = {Cold Spring Harbor Laboratory},
+	eprint = {https://www.biorxiv.org/content/early/2025/02/04/2025.01.31.635955.full.pdf},
+	journal = {bioRxiv}
 }
-
 ```
 
 ## Support
