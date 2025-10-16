@@ -15,10 +15,10 @@ def perform_regressions_and_binning(counts_mat, expert_ind,gastonmix_labels, iso
     t=0.1 # set slope=0 if LLR p-value > 0.1
 
     if umi_threshold is None:
-        umi_threshold=np.quantile( np.count_nonzero( counts_mat[gastonmix_labels==expert_ind,:], 0 ), q )
+        umi_threshold=np.quantile( np.sum( counts_mat[gastonmix_labels==expert_ind,:], 0 ), q )
 
     if zero_fit_threshold is None:
-        zero_fit_threshold=np.quantile( np.sum( counts_mat[gastonmix_labels==expert_ind,:], 0 ), q )
+        zero_fit_threshold=np.quantile( np.count_nonzero( counts_mat[gastonmix_labels==expert_ind,:], 0 ), q )
 
     # get cell types to plot
     if cell_type_df is not None:
